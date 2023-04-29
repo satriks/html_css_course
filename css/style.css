@@ -103,3 +103,28 @@
 
 }
 
+.main-trend {
+
+    font-family: "OpenSans", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(15, 13, 14);
+    padding-top: 64px;
+}
+
+.main-trend:after {
+    display: block;
+    content: "";
+    width: 67px;
+    height: 3px;
+    background-color: rgb(181, 159, 91);
+    margin: 14px auto 30px auto;
+    opacity: 0.4;
+}
+
+
+
+
+
