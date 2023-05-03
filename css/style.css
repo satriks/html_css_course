@@ -23,7 +23,6 @@
 .illumination:focus {
     outline: none;
     border: 1px solid #b59f5b;
-
 }
 
 .popup {
@@ -37,7 +36,6 @@
     background-color: rgba(0, 0, 0, 0.6);
     background-size: 100%;
     z-index: 10;
-
 }
 
 .popup-wrapper {
@@ -50,7 +48,7 @@
     box-sizing: border-box;
     width: 385px;
     height: 590px;
-    padding: 0px 30px;
+    padding: 0 30px;
     background-color: #ffffff;
 }
 
@@ -67,21 +65,18 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
-
 }
 
 .feedback-title {
     margin-top: 34px;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .feedback-hint{
     margin: 10px 0 9px;
     display: flex;
     font-size: 13px;
-
 }
 
 .feedback-text {
@@ -107,6 +102,7 @@
     position: relative;
     display: none;
 }
+
 .radio-text {
     font-size: 13px;
     margin-right: 5px;
@@ -164,7 +160,6 @@
 }
 
 .header {
-
     position: relative;
     background-image: url("../images/banner-bg.jpg");
     background-color: #ffffff;
@@ -195,17 +190,14 @@
     margin: auto;
     width: 1200px;
 
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
     box-sizing: border-box;
-
 }
 
 .logo {
-
     width: 179px;
     height: 41px;
     position: relative;
@@ -260,14 +252,12 @@ h2.main-trend {
 }
 
 .main-trend, .craft-title {
-
     font-family: "OpenSans", sans-serif;
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(15, 13, 14);
-
 }
 
 .underline:after {
@@ -301,6 +291,7 @@ h2.main-trend {
     flex: 1 1 auto;
     margin-right: 2px;
 }
+
 .trend-card:last-child {
     flex: 1 1 auto;
     margin-left: 2px;
@@ -315,12 +306,12 @@ h2.main-trend {
     background-image: url("../images/trend1.jpg");
     background-color: #ffffff;
     background-size: cover;
-
 }
 
 .garden-wrapper {
     padding: 30px 100px 35px 36px;
 }
+
 .cheese {
     background-image: url("../images/trend2.jpg");
     background-color: #ffffff;
@@ -330,6 +321,7 @@ h2.main-trend {
 .cheese-wrapper {
     padding: 32px 48px 34px 36px;
 }
+
 .mountain {
     background-image: url("../images/trend3.jpg");
     background-color: #ffffff;
@@ -363,7 +355,6 @@ h2.main-trend {
     z-index: 2;
 }
 
-
 .trend-tag {
     list-style-type: none;
     display: flex;
@@ -395,7 +386,6 @@ h2.main-trend {
     text-align: left;
     text-transform: uppercase;
 
-
     z-index: 2;
 }
 
@@ -404,7 +394,6 @@ h2.main-trend {
 }
 
 .main {
-
     max-width: 1200px;
     align-content: flex-start;
     box-sizing: border-box;
@@ -413,19 +402,18 @@ h2.main-trend {
     margin-top: 61px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .news-wraper {
     width: 75%;
     box-sizing: border-box;
-
 }
 
 .sidebar-wraper {
     width: 25%;
     margin-right: 15px;
 }
+
 .news {
     display: flex;
     /*gap: 58px;*/
@@ -437,11 +425,11 @@ h2.main-trend {
     background-color: #eff6f1;
     margin-bottom: 59px;
 }
+
 .news-content {
     margin-left: 3%;
     width: 362px;
     margin-top: -5px;
-
 }
 
 .news-title {
@@ -456,6 +444,7 @@ h2.main-trend {
 .news-title:hover {
     color: #b59f5b;
 }
+
 .news-meta {
     display: flex;
     padding-top: 25px;
@@ -466,7 +455,6 @@ h2.main-trend {
 
 .side-trend {
     display: flex;
-
 }
 
 .date {
@@ -484,8 +472,8 @@ h2.main-trend {
 .news-text {
     font-size: 15px;
     margin-left: -2px;
-
 }
+
 .aside-title {
     font-size: 14px;
     text-align: center;
@@ -544,6 +532,7 @@ h2.main-trend {
 .search-input:focus {
     border: 1px solid #b59f5b;
 }
+
 .subscribe {
     text-align: center;
     font-weight: bold;
@@ -591,23 +580,21 @@ h2.main-trend {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-
 }
 
 .aside-tag {
-
     list-style-type: none;
     border: 3px solid #f4f3f1;
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
     padding: 3px 15px;
-
 }
 
 .aside-tag:hover {
     border: 3px solid #b59f5b;
 }
+
 .tag-link {
     text-decoration: none;
     color: #0f0d0e;
@@ -630,6 +617,7 @@ h2.main-trend {
     text-decoration: none;
     color: #0f0d0e;
 }
+
 .topic-link:hover {
     color: #b59f5b;
 }
@@ -639,6 +627,7 @@ h2.main-trend {
     font-size: 12px;
     font-weight: bold;
 }
+
 .craft-cards {
     display: flex;
     width: 1200px;
@@ -652,10 +641,8 @@ h2.main-trend {
 .craft-card{
     width: 30%;
     margin-top: 5px;
-
-
-
  }
+
 .craft-img {
     display: flex;
     box-sizing: border-box;
@@ -664,8 +651,6 @@ h2.main-trend {
     margin: auto;
     background-color: #eff6f1;
     /*border: 1px solid #000000;*/
-
-
 }
 
 .craft-wraper {
@@ -677,19 +662,13 @@ h2.main-trend {
     box-sizing: border-box;
 }
 
-
-
-
 .craft-meta {
     margin-top: 55px;
     margin-left: 20px;
     margin-right: 60px;
-
-
 }
 
 .craft-title {
-
     margin-top: -10px;
     font-weight: bold;
     text-transform: uppercase;
@@ -703,7 +682,6 @@ h2.main-trend {
     font-weight: normal;
     color: #000000;
 }
-
 
 .craft-price {
     display: flex;
@@ -746,7 +724,6 @@ h2.main-trend {
     text-decoration: underline;
 }
 
-
 .footer {
     margin-top: 34px;
 }
@@ -759,7 +736,6 @@ h2.main-trend {
     gap: 30px;
     padding-top: 30px;
     box-sizing: border-box;
-
 }
 
 .copyrighting {
@@ -805,6 +781,6 @@ h2.main-trend {
 /*TODO   1 посмотреть падинги тегов 2. не забыть про ховер. 3. продумать подложку под фото 4. Подумать о воде шрита на всю страницу сразу */
 
 
-/*TODO !Уполз верх асайда, из за падинга заголовков 60 px, поправить !*/
+
 
 
