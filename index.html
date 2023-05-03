@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курсовой</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="popup hidden">
+        <div class="popup-wrapper">
+            <button class="close-button" type="button"></button>
+            <form class="feedback">
+                <h3 class="feedback-title underline">Ваш фидбек</h3>
+                <label>
+                    <span class="feedback-hint">Как часто вы заходите на сайт?</span>
+                    <select class="feedback-text illumination">
+                        <option>Почти каждый день </option>
+                        <option>Раз в несколько дней</option>
+                        <option>Раз в несколько недель</option>
+                        <option>Несколько раз в год</option>
+                    </select>
+                </label>
+                <div class="feedback-radio">
+                    <span class="feedback-hint">Вы подписанны на e-mail рассылку?</span>
+                    <label>
+                        <input class="feedback-radio-button" type="radio" name="feedback-radio">
+                        <span class="radio-text">Да</span>
+                    </label>
+                    <label>
+                        <input class="feedback-radio-button" type="radio" name="feedback-radio">
+                        <span class="radio-text">Нет</span>
+                    </label>
+                </div>
+                <label>
+                    <span class="feedback-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                    <textarea class="feedback-textarea illumination" placeholder="Может, больше рецептов?" required></textarea>
+                </label>
+                <button class="button feedback-button" type="submit">
+                    <span class="feedback-button-text ">Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
     <header class="header">
         <div class="header-content">
                 <div class="logo">
@@ -36,7 +71,7 @@
         <h2 class="main-trend underline">Сейчас в тренде</h2>
         <div class="trend-cards">
             <article class="trend-card garden">
-                <div class="trend-wrapper">
+                <div class="trend-wrapper garden-wrapper">
                     <ul class="trend-tag">
                         <li><a href="#">lifestile</a></li>
                         <li><a href="#">interior</a></li>
@@ -45,7 +80,7 @@
                 </div>
             </article>
             <article class="trend-card cheese">
-                <div class="trend-wrapper">
+                <div class="trend-wrapper cheese-wrapper">
                     <ul class="trend-tag">
                         <li><a href="#">Food</a></li>
 
@@ -54,7 +89,7 @@
                 </div>
             </article>
             <article class="trend-card mountain">
-                <div class="trend-wrapper">
+                <div class="trend-wrapper mountain-wrapper">
                     <ul class="trend-tag">
                         <li><a href="#">lifestile</a></li>
                         <li><a href="#">travel</a></li>
@@ -64,7 +99,7 @@
                 </div>
             </article>
             <article class="trend-card lemon">
-                <div class="trend-wrapper">
+                <div class="trend-wrapper lemon-wrapper">
                     <ul class="trend-tag">
                         <li><a href="#">food</a></li>
                         <li><a href="#">health</a></li>
@@ -76,7 +111,7 @@
         </div>
     </section>
     <main class="main">
-        <div class="news-wraper">
+        <section class="news-wraper">
             <article class="news">
                 <img class="news-img" src="./images/last-post1.jpg" alt="Вид на море">
                 <div class="news-content">
@@ -168,12 +203,12 @@
                 </div>
             </article>
 
-        </div>
+        </section>
         <aside class="sidebar-wraper">
-            <h3 class="aside-trend underline">Новые посты</h3>
+            <h3 class="aside-title underline">Новые посты</h3>
             <article class="side-trend">
                 <img class="side-img" src="./images/2.jpg"  alt="море">
-                <div class="post-meta">
+                <div class="side-meta">
 						<time class="date" datetime="2019-06-14">14 июня 2019</time>
 						<h3 class="side-menu-title">
 							<a class="title-link" href="#">10 мест, ради которых
@@ -183,16 +218,16 @@
             </article>
             <article class="side-trend">
                 <img class="side-img" src="./images/151.jpg"  alt="йога">
-                <div class="post-meta">
+                <div class="side-meta">
 						<time class="date" datetime="2019-06-14">14 июня 2019</time>
-						<h3 class="side-menu-title">
+						<h3 class="side-menu-title yoga-text">
 							<a class="title-link" href="#">Йога для домашних</a>
 						</h3>
                 </div>
             </article>
             <article class="side-trend">
                 <img class="side-img" src="./images/45.jpg"  alt="кресло">
-                <div class="post-meta">
+                <div class="side-meta">
 						<time class="date" datetime="2019-06-14">14 июня 2019</time>
 						<h3 class="side-menu-title">
 							<a class="title-link" href="#">как мы превратили классное место в балкон</a>
@@ -201,7 +236,7 @@
             </article>
             <article class="side-trend">
                 <img class="side-img" src="./images/501.jpg"  alt="тарелка">
-                <div class="post-meta">
+                <div class="side-meta">
 						<time class="date" datetime="2019-06-14">14 июня 2019</time>
 						<h3 class="side-menu-title">
 							<a class="title-link" href="#">Кулинарный подход к науке</a>
@@ -209,8 +244,8 @@
                 </div>
             </article>
             <article class="side-trend">
-                <img class="side-img" src="./images/45.jpg"  alt="волосы">
-                <div class="post-meta">
+                <img class="side-img" src="./images/7.jpg"  alt="волосы">
+                <div class="side-meta">
 						<time class="date" datetime="2019-06-14">14 июня 2019</time>
 						<h3 class="side-menu-title">
 							<a class="title-link" href="#">лучшие прически для распущенных волос</a>
@@ -219,24 +254,24 @@
             </article>
             <form class="search-form">
                 <label class="label">
-                    <input  class="search-input" type="search" placeholder="Найти... " required>
+                    <input  class="search-input illumination" type="search" placeholder="Найти... " required>
                 </label>
                 <button class="button search-button" type="submit">
 						<span class="hidden">Лупа</span>
                 </button>
             </form>
-            <h3 class="aside-trend underline">Рассылка</h3>
+            <h3 class="aside-title underline">Рассылка</h3>
             <form class="subscribe-form">
                 <label class="label">
-                    <input  class="subscribe-input" type="email" placeholder="Введите email адрес " required>
+                    <input  class="subscribe-input illumination" type="email" placeholder="Введите email адрес " required>
                 </label>
                 <button class="button subscribe-button" type="submit">
 						<span class="subscribe">Подписаться</span>
                 </button>
             </form>
-            <h3 class="aside-tag-title underline">Теги</h3>
+            <h3 class="aside-title underline">Теги</h3>
             <ul class="aside-tags">
-                <li class="aside-tag"><a class="tag-link" href="#"> Fashion</a></li>
+                <li class="aside-tag "><a class="tag-link" href="#"> Fashion</a></li>
                 <li class="aside-tag"><a class="tag-link" href="#"> music</a></li>
                 <li class="aside-tag"><a class="tag-link" href="#"> lifestyle</a></li>
                 <li class="aside-tag"><a class="tag-link" href="#"> art</a></li>
@@ -245,7 +280,7 @@
                 <li class="aside-tag"><a class="tag-link" href="#"> food</a></li>
                 <li class="aside-tag"><a class="tag-link" href="#"> health</a></li>
             </ul>
-            <h3 class="aside-topics underline">Темы</h3>
+            <h3 class="aside-title underline">Темы</h3>
             <ul class="side-topics">
                 <li class="topic">
                     <a class="topic-link" href="#">Красота <sup class="topic-counter">12</sup></a></li>
@@ -265,32 +300,71 @@
     </main>
     <section class="craft">
        <h2 class="craft-title underline">Наши изделия</h2>
-        <div class="item-cards">
+        <div class="craft-cards">
 
-            <article class="item-card">
-                <img class="item-img" src="./images/shop-item-desk1.jpg">
-                <div class="item-wraper">
-                    <div class="item-meta">
-                        <h2 class="item-title ">Подушки на диван</h2>
-                        <p class="item-text">Набор из двух подушек с модными принтами. Видео о создании здесь.</p>
+            <article class="craft-card">
+                <img class="craft-img" src="./images/shop-item-desk1.jpg" alt="Подушка">
+                <div class="craft-wraper">
+                    <div class="craft-meta">
+                        <h2 class="craft-title ">Подушки на диван</h2>
+                        <p class="craft-text">Набор из двух подушек с модными принтами. Видео о создании <a class="craft-link" href="#">здесь</a>.</p>
                     </div>
-                    <div class="item-price">
+                    <div class="craft-price">
                         <div class="price">
                             <p class="old-price">1000 ₽</p>
                             <p class="new-price">800 ₽</p>
                         </div>
-                        <button type="submit">Кнопка</button>
+                        <button  class="submit-shop button" type="submit">В магазин</button>
                     </div>
 
                 </div>
             </article>
+            <article class="craft-card">
+                <img class="craft-img" src="./images/shop-item-desk2.jpg" alt="Зайчик">
+                <div class="craft-wraper">
+                    <div class="craft-meta">
+                        <h2 class="craft-title ">Кукла «Зайчик»</h2>
+                        <p class="craft-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="craft-link" href="#">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+                    </div>
+                    <div class="craft-price">
+                        <div class="price">
+                             <p class="old-price invisible">500 ₽</p>
+                            <p class="new-price">3500 ₽</p>
+                        </div>
+                        <button  class="submit-shop button" type="submit">В магазин</button>
+                    </div>
+
+                </div>
+            </article>
+            <article class="craft-card">
+                <img class="craft-img" src="./images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                <div class="craft-wraper">
+                    <div class="craft-meta">
+                        <h2 class="craft-title ">Шестиугольная рамка</h2>
+                        <p class="craft-text">Необычная рамка для украшения дома из видео <a class="craft-link" href="#">«Как сделать рамку из подручных средств за 30 минут»</a>.</p>
+                    </div>
+                    <div class="craft-price">
+                        <div class="price">
+                            <p class="old-price">500 ₽</p>
+                            <p class="new-price">400 ₽</p>
+                        </div>
+                        <button  class="submit-shop button" type="submit">В магазин</button>
+                    </div>
+
+                </div>
+            </article>
+
         </div>
     </section>
-    <footer>
-        <a href="#" class="social-icon social-icon__dribbble"></a>
-        <a href="#" class="social-icon social-icon__pinterest"></a>
-        <a href="#" class="social-icon social-icon__tumblr"></a>
-        <a href="#">Copyright © 2009–2019 City Blog LLC.</a>
+    <footer class="footer">
+        <div class="social-links">
+            <a class="social-icon social-icon__dribbble" href="#" ></a>
+            <a class="social-icon social-icon__pinterest" href="#" ></a>
+            <a class="social-icon social-icon__tumblr" href="#" ></a>
+        </div>
+
+         <a  class="copyrighting" href="#">Copyright © 2009–2019 City Blog LLC.</a>
+
     </footer>
 </body>
 </html>
