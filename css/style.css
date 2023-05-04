@@ -27,15 +27,17 @@
 
 .popup {
     position: absolute;
+    z-index: 10;
 
     width: 100vw;
     height: 350vh;
     display: flex;
     justify-content: center;
     align-content: center;
+
     background-color: rgba(0, 0, 0, 0.6);
     background-size: 100%;
-    z-index: 10;
+
 }
 
 .popup-wrapper {
@@ -43,12 +45,14 @@
     top: 245px;
     left: auto;
     right: auto;
+
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     width: 385px;
     height: 590px;
     padding: 0 30px;
+
     background-color: #ffffff;
 }
 
@@ -83,15 +87,15 @@
     display: flex;
     height: 47px;
     width: 100%;
-    border: none;
     padding: 0 17px;
-    background-color: #f4f7f6;
+    margin-bottom: 25px;
 
+    border: none;
+    background-color: #f4f7f6;
     background-image: url("../svg/form-arrows.svg");
     background-size: 10px auto;
     background-repeat: no-repeat;
     background-position: right 13px center;
-    margin-bottom: 25px;
 
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -104,9 +108,8 @@
 }
 
 .radio-text {
-    font-size: 13px;
     margin-right: 5px;
-
+    font-size: 13px;
 }
 
 .radio-text:before {
@@ -114,11 +117,12 @@
     display: inline-block;
     width: 20px;
     height: 20px;
+    vertical-align: middle;
+    padding-left: 5px ;
+
     background-image: url("../svg/form-empty-circle.svg");
     background-repeat: no-repeat;
     background-size: 18px;
-    vertical-align: middle;
-    padding-left: 5px ;
 }
 
 .feedback-radio-button:checked ~ .radio-text:before {
@@ -154,22 +158,23 @@
 .feedback-button-text {
     display: flex;
     align-self: center;
+    font-weight: bold;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: bold;
 }
 
 .header {
     position: relative;
+    z-index: 0;
+    height: 450px;
+    box-sizing: border-box;
+
     background-image: url("../images/banner-bg.jpg");
     background-color: #ffffff;
     padding-top: 30px;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 450px;
-    box-sizing: border-box;
-    z-index: 0;
 }
 
 .header-content:after, .trend-card:after {
@@ -179,21 +184,19 @@
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 1;
     background-color: black;
     opacity: 0.6;
-
-    z-index: 1;
 }
 
 
 .header-content {
-    margin: auto;
-    width: 1200px;
-
     display: flex;
+    width: 1200px;
+    margin: auto;
+    padding: 0 15px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
     box-sizing: border-box;
 }
 
@@ -205,19 +208,19 @@
 }
 
 .container__menu {
+    position: relative;
+    z-index: 2;
     display: flex;
     width: 40%;
     justify-content: flex-end;
-    position: relative;
-    z-index: 2;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    list-style-type: none;
     font-size: 13px;
+    list-style-type: none;
 }
 
 .menu a, .trand-text {
@@ -231,28 +234,27 @@
 }
 
 .head-text {
-    font-family: OpenSans, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
     position: relative;
-    padding-top: 105px;
-    text-align: center;
-
-    line-height: 1.6;
+    z-index: 2;
 
     margin-left: auto;
     margin-right: auto;
+    padding-top: 105px;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 30px;
+
+    line-height: 1.6;
     color: white;
     text-transform: uppercase;
-    z-index: 2;
-
 }
+
 h2.main-trend {
     padding-top: 59px;
 }
 
 .main-trend, .craft-title {
-    font-family: "OpenSans", sans-serif;
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
@@ -261,12 +263,12 @@ h2.main-trend {
 }
 
 .underline:after {
-    display: block;
     content: "";
+    display: block;
+    margin: 10px auto 23px auto;
     width: 67px;
     height: 3px;
     background-color: #b59f5b;
-    margin: 10px auto 23px auto;
     opacity: 0.4;
 }
 
@@ -282,8 +284,8 @@ h2.main-trend {
     position: relative;
     width: 25%;
     height: 320px;
-    box-sizing: border-box;
     padding-right: 10px;
+    box-sizing: border-box;
 
 }
 
@@ -344,34 +346,29 @@ h2.main-trend {
 
 .trend-wrapper {
     position: absolute;
-
+    z-index: 2;
     right: 5%;
     bottom: 5%;
     left: 5%;
-    /*margin: auto;*/
     border: 3px solid #908352;
-    /*padding: 27px 100px 35px 36px;*/
-
-    z-index: 2;
 }
 
 .trend-tag {
-    list-style-type: none;
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
     margin-bottom: 5px;
+    gap: 15px;
+    list-style-type: none;
 }
 
 .trend-tag a {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    z-index: 2;
     font-weight: bold;
     color: #b59f5b;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
-
-    z-index: 2;
 }
 
 .trend-tag a:hover {
@@ -379,14 +376,13 @@ h2.main-trend {
 }
 
 .trand-text {
-    display: flex;
     position: relative;
+    z-index: 2;
+    display: flex;
     font-size: 18px;
     font-weight: bold;
     text-align: left;
     text-transform: uppercase;
-
-    z-index: 2;
 }
 
 .trand-text:hover {
@@ -394,14 +390,14 @@ h2.main-trend {
 }
 
 .main {
-    max-width: 1200px;
-    align-content: flex-start;
-    box-sizing: border-box;
     display: flex;
+    max-width: 1200px;
     padding: 0 15px;
     margin-top: 61px;
     margin-left: auto;
     margin-right: auto;
+    align-content: flex-start;
+    box-sizing: border-box;
 }
 
 .news-wraper {
@@ -416,29 +412,27 @@ h2.main-trend {
 
 .news {
     display: flex;
-    /*gap: 58px;*/
-    /*padding-bottom: 58px;*/
 }
 
 .news-img {
     position: relative;
-    background-color: #eff6f1;
     margin-bottom: 59px;
+    background-color: #eff6f1;
 }
 
 .news-content {
-    margin-left: 3%;
     width: 362px;
     margin-top: -5px;
+    margin-left: 3%;
 }
 
 .news-title {
     display: inline-block;
-    text-transform: uppercase;
     text-align: left;
     font-size: 20px;
     text-decoration: none;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .news-title:hover {
@@ -475,10 +469,10 @@ h2.main-trend {
 }
 
 .aside-title {
+     margin-top: 0;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0;
 }
 
 .aside-title:not(:first-child) {
@@ -487,12 +481,12 @@ h2.main-trend {
 
 .title-link {
     display: inline-block;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
     text-align: left;
     font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.2;
     color: #000000;
 }
 
@@ -524,9 +518,9 @@ h2.main-trend {
 .search-input, .subscribe-input {
     width: 100%;
     height: 48px;
+    padding-left: 9px;
     border: 0;
     background-color: #f4f7f6;
-    padding-left: 9px;
 }
 
 .search-input:focus {
@@ -583,12 +577,12 @@ h2.main-trend {
 }
 
 .aside-tag {
-    list-style-type: none;
-    border: 3px solid #f4f3f1;
+    padding: 3px 15px;
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
-    padding: 3px 15px;
+    list-style-type: none;
+    border: 3px solid #f4f3f1;
 }
 
 .aside-tag:hover {
@@ -601,8 +595,8 @@ h2.main-trend {
 }
 
 .side-topics{
-    list-style-type: none;
     margin-top: -16px;
+    list-style-type: none;
 }
 
 .topic {
@@ -650,16 +644,15 @@ h2.main-trend {
     height: 205px;
     margin: auto;
     background-color: #eff6f1;
-    /*border: 1px solid #000000;*/
 }
 
 .craft-wraper {
     position: relative;
     top: -30px;
     display: inline-block;
-    border: 3px solid rgba(181, 159, 81, 0.4);
     min-height: 265px;
     box-sizing: border-box;
+    border: 3px solid rgba(181, 159, 81, 0.4);
 }
 
 .craft-meta {
@@ -730,54 +723,54 @@ h2.main-trend {
 
 .social-links {
     display: flex;
-    justify-content: center;
     height: 80px;
-    background-color: #f4f7f6;
-    gap: 30px;
+    justify-content: center;
     padding-top: 30px;
     box-sizing: border-box;
+    background-color: #f4f7f6;
+    gap: 30px;
 }
 
 .copyrighting {
-    text-align: center;
-    color: #999999;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     padding-top: 73px;
     padding-bottom: 45px;
+    text-align: center;
+    color: #999999;
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .social-icon__dribbble {
     display: block;
-    background-image: url("../svg/001-dribbble.svg");
     width: 20px;
     height: 20px;
+    background-image: url("../svg/001-dribbble.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .social-icon__pinterest {
     display: block;
-    background-image: url("../svg/002-pinterest.svg");
     width: 20px;
     height: 20px;
+    background-image: url("../svg/002-pinterest.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .social-icon__tumblr {
     display: block;
-    background-image: url("../svg/003-tumblr.svg");
     width: 20px;
     height: 20px;
+    background-image: url("../svg/003-tumblr.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/*TODO   1 посмотреть падинги тегов 2. не забыть про ховер. 3. продумать подложку под фото 4. Подумать о воде шрита на всю страницу сразу */
+
 
 
 
