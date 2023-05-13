@@ -163,6 +163,39 @@
     color: #ffffff;
 }
 
+.menu-button {
+
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    z-index: 3;
+
+    border: none;
+    width: 22px;
+    height: 19px;
+    background-color: transparent;
+
+}
+
+.menu-button-label, .menu-button:before, .menu-button:after {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.menu-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+}
+
+.menu-button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+}
+
 .header {
     position: relative;
     z-index: 0;
@@ -236,6 +269,9 @@
     position: relative;
     z-index: 2;
 
+    display: flex;
+    justify-content: center;
+
     margin-left: auto;
     margin-right: auto;
     padding-top: 110px;
@@ -252,6 +288,7 @@ h1 {
     font-size: 45px;
     line-height: 75px;
     margin: 0;
+    max-width: 730px;
 }
 
 
@@ -393,7 +430,7 @@ h2.main-trend {
 .main {
     display: flex;
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 16px;
     margin-top: 61px;
     margin-left: auto;
     margin-right: auto;
@@ -790,7 +827,191 @@ h2.main-trend {
     background-size: cover;
 }
 
+@media screen and (max-width: 641px) and (orientation: portrait) {
+    html {
+        overflow-x: hidden;
+    }
+    .trend-cards, .main, .news, .craft-cards {
+        flex-direction: column;
+    }
+    .container__menu {
+        position: fixed;
+        transform: scale(0);
+    }
+    .header-content {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .logo {
+        width: 270px;
+        height: 60px;
+    }
 
+    .header {
+        min-height: 640px;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        background-image: url("../images/banner-mobile.jpg");
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    .head-text {
+        padding: 0 15px;
+        padding-top: 28px;
+
+    }
+    .main-title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .main-trend, .trand-text {
+        font-size: 16px;
+    }
+
+    h2.main-trend {
+        padding-top: 2.5em;
+    }
+
+    .trend-card {
+        width: 100%;
+        margin-bottom: 2px;
+        min-height: 230px;
+    }
+    .trend-card:not(:first-child):not(:last-child) {
+        margin-bottom: 2px;
+    }
+
+    .trend-wrapper {
+        padding-left: 22px;
+        padding-top: 20px;
+    }
+
+    .cheese-wrapper, .mountain-wrapper{
+        padding-right: 18px;
+
+    }
+    .news-wraper {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .main {
+        margin-top: 2.5em;
+    }
+    .news-content {
+        margin: 0;
+    }
+
+    .trend-tag {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .news {
+        margin-bottom: 15px;
+    }
+
+    .news:not(:last-child):after  {
+        content: "";
+        display: block;
+        margin: 10px auto 23px auto;
+        width: 100%;
+        height: 3px;
+        background-color: #eeeeee;
+        /*opacity: 0.4;*/
+    }
+
+    .news-title, .craft-title{
+        font-size: 16px;
+    }
+    .news-meta {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .news-text {
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+    .indent {
+        display: block;
+        content: "";
+        margin: 2px;
+    }
+
+    .sidebar-wraper {
+        width: 100%;
+    }
+
+    .side:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .aside-title {
+        font-size: 16px;
+    }
+
+    .aside-tag {
+        padding: 5px 14px;
+    }
+
+    .craft-cards {
+        width: 100%;
+    }
+
+    .craft-card {
+        width: 100%;
+    }
+
+    h3.craft-title {
+        font-size: 17px;
+        line-height: 29px;
+        text-align: start;
+    }
+
+    .craft-img {
+        width: auto;
+        height: auto;
+    }
+
+    .craft-cards {
+        padding: 0;
+    }
+
+    .craft-card {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .craft-meta {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .craft-price {
+        margin-top: 15px;
+    }
+
+    .craft-wraper {
+        min-height: auto;
+    }
+
+    .footer {
+        margin-top: 15px;
+    }
+
+    .copyrighting {
+        padding-top: 55px;
+    }
+}
 
 
 

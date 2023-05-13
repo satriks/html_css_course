@@ -50,8 +50,10 @@
                     <a class="logo-link" href="#">
                         <img src="svg/noemi-logo.svg" class="header-logo" alt="Логитип">
                     </a>
-
                 </div>
+                <button class="menu-button" type="button">
+          			<span class="menu-button-label"></span>
+                </button>
                 <nav class="container__menu">
                     <ul class="menu">
                         <li><a href="#" class="menu__item">главная</a></li>
@@ -67,7 +69,7 @@
 
             </div>
         <div class="head-text">
-            <h1>Блог о творчестве, спорте,<br> и образе жизни</h1>
+            <h1 class="main-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
     </header>
 
@@ -170,7 +172,7 @@
                     </div>
                     <div class="news-text">
                         <p class="news-text-block">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
-                        <br>
+                        <br class="indent">
                         <p class="news-text-block">Мы составили список лучших летних фестивалей по всему миру.</p>
 
                     </div>
@@ -323,7 +325,12 @@
         <div class="craft-cards">
 
             <article class="craft-card">
-                <img class="craft-img" src="./images/shop-item-desk1.jpg" alt="Подушка">
+                <picture>
+					<source media="(min-width: 1200px)" srcset="./images/shop-item-desk1.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="./images/shop-item-tablet1.jpg">
+					<source media="(max-width: 640px)" srcset="./images/shop-item-mobile1.jpg">
+					<img class="craft-img" src="./images/shop-item-desk1.jpg" alt="Подушка">
+				</picture>
                 <div class="craft-wraper">
                     <div class="craft-meta">
                         <h3 class="craft-title ">Подушки на диван</h3>
@@ -340,7 +347,12 @@
                 </div>
             </article>
             <article class="craft-card">
-                <img class="craft-img" src="./images/shop-item-desk2.jpg" alt="Зайчик">
+                <picture>
+					<source media="(min-width: 1200px)" srcset="./images/shop-item-desk2.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="./images/shop-item-tablet2.jpg">
+					<source media="(max-width: 640px)" srcset="./images/shop-item-mobile2.jpg">
+					<img class="craft-img" src="./images/shop-item-desk2.jpg" alt="Зайчик">
+				</picture>
                 <div class="craft-wraper">
                     <div class="craft-meta">
                         <h3 class="craft-title ">Кукла «Зайчик»</h3>
@@ -359,7 +371,12 @@
                 </div>
             </article>
             <article class="craft-card">
-                <img class="craft-img" src="./images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                <picture>
+					<source media="(min-width: 1200px)" srcset="./images/shop-item-desk3.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="./images/shop-item-tablet3.jpg">
+					<source media="(max-width: 640px)" srcset="./images/shop-item-mobile3.jpg">
+					<img class="craft-img" src="./images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+				</picture>
                 <div class="craft-wraper">
                     <div class="craft-meta">
                         <h3 class="craft-title">Шестиугольная рамка</h3>
