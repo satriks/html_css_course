@@ -682,7 +682,6 @@ h2.main-trend {
 .craft-wraper {
     position: relative;
     top: -30px;
-    display: inline-block;
     min-height: 265px;
     box-sizing: border-box;
     border: 3px solid rgba(181, 159, 81, 0.4);
@@ -1102,6 +1101,20 @@ h2.main-trend {
         width: 48%;
     }
 
+    h3.craft-title {
+        text-align: left;
+    }
+
+    .main {
+        margin-bottom: 50px;
+    }
+    .footer {
+        margin-top: 15px;
+    }
+
+    .copyrighting {
+        padding-top: 50px;
+    }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
@@ -1114,7 +1127,9 @@ h2.main-trend {
         width: 24%;
         flex-grow: 1;
         margin: 0;
+        min-height: auto;
     }
+
 }
 
 
