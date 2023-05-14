@@ -1132,5 +1132,13 @@ h2.main-trend {
 
 }
 
+@media screen and (min-width: 1200px) {
+    .menu-button {
+        position: fixed;
+        transform: scale(0)
+    }
+}
+
+
 
 
