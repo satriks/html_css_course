@@ -206,6 +206,7 @@
     padding-top: 25px;
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: cover;
 
 }
 
@@ -830,10 +831,10 @@ h2.main-trend {
         justify-content: center;
         margin: 0;
     }
-    .logo {
-        width: 270px;
-        height: 60px;
-    }
+    /*.logo {*/
+    /*    width: 70vw;*/
+    /*    height: 60px;*/
+    /*}*/
 
     .header {
         min-height: 640px;
@@ -875,6 +876,7 @@ h2.main-trend {
     .trend-wrapper {
         padding-left: 22px;
         padding-top: 20px;
+        padding-right: 18px;
     }
 
     .cheese-wrapper, .mountain-wrapper{
@@ -964,7 +966,7 @@ h2.main-trend {
     }
 
     .craft-img {
-        width: auto;
+        width: 80vw;
         height: auto;
     }
 
@@ -997,6 +999,11 @@ h2.main-trend {
     .copyrighting {
         padding-top: 55px;
     }
+    .social-links-wrapper {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
 }
 @media screen and (max-width: 641px) and (orientation: landscape) {
 
@@ -1058,6 +1065,10 @@ h2.main-trend {
         margin-bottom: 10px;
         font-size: 14px;
     }
+     .social-links-wrapper {
+         margin-right: 30px;
+         margin-left: 30px;
+     }
 
    .news:not(:last-child):after  {
     content: "";
@@ -1137,8 +1148,22 @@ h2.main-trend {
         position: fixed;
         transform: scale(0)
     }
+    .social-links-wrapper {
+        width: 1170px;
+        margin: auto;
+
+    }
 }
 
+@media screen and (max-width: 300px) {
+    .logo {
+        width: 70vw;
+    }
+}
 
-
+@media screen and (max-width: 1200px) {
+    .header-content {
+        width: auto;
+    }
+}
 
